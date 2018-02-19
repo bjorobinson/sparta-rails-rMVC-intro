@@ -1,1 +1,10 @@
 <h1>Index</h1>
+<%= @users.each do |user| %>
+  <div>
+    <h3><%= user.username %></h3>
+    <p><%= user.age %></p>
+    <p><%= user.paid %></p>
+    <p><%= user.last_login %></p>
+    <p><%= user.join_date %></p>
+  </div>
+<% end %>
